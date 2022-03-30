@@ -132,11 +132,6 @@ path = "examples/get_channel_status.rs"
 required-features = ["reqwest_client", "helix"]
 
 [[example]]
-name = "get_hosts"
-path = "examples/get_hosts.rs"
-required-features = ["surf_client", "tmi"]
-
-[[example]]
 name = "get_moderation"
 path = "examples/get_moderation.rs"
 required-features = ["surf_client", "helix"]
