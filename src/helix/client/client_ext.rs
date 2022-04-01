@@ -187,6 +187,7 @@ impl<'a, C: crate::HttpClient<'a> + Sync> HelixClient<'a, C> {
         let req = helix::users::GetUsersFollowsRequest::builder()
             .to_id(to_id)
             .from_id(from_id)
+            .first(100)
             .build();
         make_stream(req, token, self, |s| {
             std::collections::VecDeque::from(s.follow_relationships)
