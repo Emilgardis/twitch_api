@@ -178,6 +178,7 @@ impl<'a, C: crate::HttpClient<'a> + Sync> HelixClient<'a, C> {
     ) -> std::pin::Pin<
         Box<
             dyn futures::Stream<Item = Result<helix::users::FollowRelationship, ClientError<'a, C>>>
+                + Send
                 + 'a,
         >,
     >

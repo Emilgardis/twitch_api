@@ -236,6 +236,16 @@ impl<'a> Client<'a> for twitch_oauth2::client::DummyClient {
     }
 }
 
+impl<'a, C> Client<'a> for std::sync::Arc<C>
+where C: Client<'a>
+{
+    type Error = <C as Client<'a>>::Error;
+
+    fn req(&'a self, req: Request) -> BoxedFuture<'a, Result<Response, Self::Error>> {
+        self.as_ref().req(req)
+    }
+}
+
 #[cfg(feature = "surf")]
 impl ClientDefault<'static> for DummyHttpClient
 where Self: Default
