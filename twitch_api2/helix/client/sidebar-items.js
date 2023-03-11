@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["HelixClient","Client for Helix or the New Twitch API"]]});

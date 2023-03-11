@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["EventSubSubscriptions","Return Values for Get EventSub Subscriptions"],["GetEventSubSubscriptionsRequest","Query Parameters for Get EventSub Subscriptions"]]});

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["ReplaceStreamTags","StreamType"],"mod":["get_followed_streams","get_stream_tags","get_streams","replace_stream_tags"],"struct":["GetFollowedStreamsRequest","GetStreamTagsRequest","GetStreamsRequest","ReplaceStreamTagsBody","ReplaceStreamTagsRequest","Stream"],"type":["Tag"]};

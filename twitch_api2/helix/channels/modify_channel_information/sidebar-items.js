@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ModifyChannelInformation","Return Values for Modify Channel Information"]],"struct":[["ModifyChannelInformationBody","Body Parameters for Modify Channel Information"],["ModifyChannelInformationRequest","Query Parameters for Modify Channel Information"]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CustomReward","Return Values for Get Custom Reward"],["GetCustomRewardRequest","Query Parameters for Get Custom Reward"]]});

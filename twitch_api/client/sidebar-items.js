@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["CompatError","ReqwestClientDefaultError","SurfError","UreqError"],"fn":["user_agent"],"static":["TWITCH_API_USER_AGENT"],"struct":["Body","Bytes","DummyHttpClient"],"trait":["Client","ClientDefault","RequestExt","ResponseExt"],"type":["BoxedFuture","Request","Response"]};

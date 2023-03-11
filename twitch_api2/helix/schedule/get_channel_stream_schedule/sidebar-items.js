@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["GetChannelStreamScheduleRequest","Query Parameters for Get Channel Stream Schedule"]],"type":[["GetChannelStreamScheduleResponse","Return Values for Get Channel Stream Schedule"]]});

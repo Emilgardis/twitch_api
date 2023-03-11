@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Event","A notification with an event payload. Enumerates all possible `Payload`s"],["EventType","Event types"]]});

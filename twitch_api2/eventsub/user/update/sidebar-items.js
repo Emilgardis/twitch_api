@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["UserUpdateV1","`user.update`: user updates their account."],["UserUpdateV1Payload","`user.update` response payload."]]});

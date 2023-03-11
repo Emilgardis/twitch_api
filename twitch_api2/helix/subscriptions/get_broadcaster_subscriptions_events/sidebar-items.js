@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BroadcasterSubscriptionEventType","Type of event"]],"struct":[["BroadcasterSubscriptionEvent","Return Values for Get Broadcaster Subscriptions Events"],["BroadcasterSubscriptionEventData","Event data for broadcaster events."],["GetBroadcasterSubscriptionsEventsRequest","Query Parameters for Get Broadcaster Subscriptions Events"]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ChannelSubGiftsV1Reply","Reply from [ChannelSubGiftsV1]"]],"struct":[["ChannelSubGiftsV1","A user gifts subs."],["MysteryGiftPurchase","Mystery gift"]]});

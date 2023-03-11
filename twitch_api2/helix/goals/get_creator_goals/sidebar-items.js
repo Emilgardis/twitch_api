@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CreatorGoal","Return Values for Get Creator Goals"],["GetCreatorGoalsRequest","Query Parameters for Get Creator Goals"]]});

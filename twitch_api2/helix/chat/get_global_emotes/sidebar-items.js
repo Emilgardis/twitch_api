@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["GetGlobalEmotesRequest","Query Parameters for Get Channel Emotes"]],"type":[["GetChannelEmotesResponse","Return Values for Get Channel Emotes"]]});

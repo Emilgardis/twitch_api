@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ChannelCheerEventsPublicV1Reply","Reply from [ChannelCheerEventsPublicV1]"],["TriggerType","Trigger for cheer event/cheer bomb"]],"struct":[["ChannelCheerEventsPublicV1","A user redeems a cheer with shared rewards."]]});

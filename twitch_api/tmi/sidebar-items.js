@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["RequestError"],"struct":["Chatters","GetChatters","TmiClient"],"type":["UserId"]};

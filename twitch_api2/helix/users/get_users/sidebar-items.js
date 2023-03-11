@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["GetUsersRequest","Query Parameters for Get Users"],["User","Return Values for Get Users"]]});

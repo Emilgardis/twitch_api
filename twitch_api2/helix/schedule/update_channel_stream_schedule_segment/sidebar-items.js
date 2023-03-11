@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["UpdateChannelStreamScheduleSegmentBody","Body Parameters for Update Channel Stream Schedule Segment"],["UpdateChannelStreamScheduleSegmentRequest","Query Parameters for Update Channel Stream Schedule Segment"]],"type":[["UpdateChannelStreamScheduleSegmentResponse","Return Values for Update Channel Stream Schedule Segment"]]});

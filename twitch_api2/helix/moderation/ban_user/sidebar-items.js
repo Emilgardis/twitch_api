@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["BanUser","Return Values for Ban User"],["BanUserBody","Body Parameters for Ban User"],["BanUserRequest","Query Parameters for Ban User"]]});

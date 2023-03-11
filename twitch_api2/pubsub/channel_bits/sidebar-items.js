@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BitsContext","Context that triggered pubsub message"],["ChannelBitsEventsV2Reply","Reply from [ChannelBitsEventsV2]"]],"struct":[["BadgeEntitlement","[`ChannelBitsEventsV2Reply::BitsEvent`] event unlocked new badge for user."],["BitsEventData","Data for bits event"],["ChannelBitsEventsV2","Anyone cheers in a specified channel."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ChannelPredictionBeginV1","`channel.prediction.begin`: a Prediction begins on the specified channel"],["ChannelPredictionBeginV1Payload","`channel.prediction.begin` response payload."]]});

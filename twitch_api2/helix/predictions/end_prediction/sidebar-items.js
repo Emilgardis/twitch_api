@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["EndPrediction","Return Values for Update CustomReward"],["PredictionStatus","Status of the Prediction"]],"struct":[["EndPredictionBody","Body Parameters for End Prediction"],["EndPredictionRequest","Query Parameters for End Prediction"],["PredictionId","A prediction ID"]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["UpdateChannelStreamSchedule","Return Values for Update Channel Stream Schedule"]],"struct":[["UpdateChannelStreamScheduleRequest","Query Parameters for Update Channel Stream Schedule"]]});

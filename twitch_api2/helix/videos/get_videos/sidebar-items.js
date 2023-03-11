@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["GetVideosRequest","Query Parameters for Get Videos"],["MutedSegment","muted segment in a video."],["Video","Return Values for Get Videos"]]});

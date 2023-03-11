@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ChannelSubscribeV1","`channel.subscribe`: a specified channel receives a subscriber. This does not include resubscribes."],["ChannelSubscribeV1Payload","`channel.subscribe` response payload."]]});

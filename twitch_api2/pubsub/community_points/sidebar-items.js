@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CommunityPointsChannelV1","A user redeems an reward using channel points."]]});

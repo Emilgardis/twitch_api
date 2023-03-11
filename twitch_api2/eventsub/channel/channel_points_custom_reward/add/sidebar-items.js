@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ChannelPointsCustomRewardAddV1","`channel.channel_points_custom_reward.add`: a custom channel points reward has been created for the specified channel."],["ChannelPointsCustomRewardAddV1Payload","`channel.channel_points_custom_reward.add` response payload."]]});

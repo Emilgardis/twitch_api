@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ChannelPredictionEndV1","`channel.hype_train.end`: a Prediction ends on the specified channel."],["ChannelPredictionEndV1Payload","`channel.hype_train.end` response payload."]]});
