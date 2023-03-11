@@ -104,6 +104,11 @@
 <a href="#104" id="104">104</a>
 <a href="#105" id="105">105</a>
 <a href="#106" id="106">106</a>
+<a href="#107" id="107">107</a>
+<a href="#108" id="108">108</a>
+<a href="#109" id="109">109</a>
+<a href="#110" id="110">110</a>
+<a href="#111" id="111">111</a>
 </pre><pre class="rust"><code><span class="attr">#![doc(alias = <span class="string">&quot;channels&quot;</span>)]
 #![allow(deprecated)]
 </span><span class="doccomment">//! Subscription types regarding channels
@@ -122,6 +127,7 @@
 <span class="kw">pub mod </span>poll;
 <span class="kw">pub mod </span>prediction;
 <span class="kw">pub mod </span>raid;
+<span class="kw">pub mod </span>shield_mode;
 <span class="kw">pub mod </span>shoutout;
 <span class="kw">pub mod </span>subscribe;
 <span class="kw">pub mod </span>subscription;
@@ -194,6 +200,10 @@
 </span><span class="kw">pub use </span>prediction::{ChannelPredictionProgressV1, ChannelPredictionProgressV1Payload};
 <span class="attr">#[doc(inline)]
 </span><span class="kw">pub use </span>raid::{ChannelRaidV1, ChannelRaidV1Payload};
+<span class="attr">#[doc(inline)]
+</span><span class="kw">pub use </span>shield_mode::{ChannelShieldModeBeginV1, ChannelShieldModeBeginV1Payload};
+<span class="attr">#[doc(inline)]
+</span><span class="kw">pub use </span>shield_mode::{ChannelShieldModeEndV1, ChannelShieldModeEndV1Payload};
 <span class="attr">#[doc(inline)]
 </span><span class="kw">pub use </span>shoutout::{ChannelShoutoutCreateV1, ChannelShoutoutCreateV1Payload};
 <span class="attr">#[doc(inline)]
