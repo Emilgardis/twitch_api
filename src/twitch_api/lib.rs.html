@@ -1,6 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../static.files/rustdoc-4e54bb2b497cc83f.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="twitch_api" data-themes="" data-resource-suffix="" data-rustdoc-version="1.77.0-nightly (ca663b06c 2024-01-08)" data-channel="nightly" data-search-js="search-1cefe72944ee87e6.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../../static.files/storage-f2adc0d6ca4d09fb.js"></script><script defer src="../../static.files/src-script-e66d777a5a92e9b2.js"></script><script defer src="../../src-files.js"></script><script defer src="../../static.files/main-0b2e2def73e61cbe.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-04d5337699b92874.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title">
-            <h2>Files</h2></div></nav><div class="sidebar-resizer"></div>
-    <main><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../../twitch_api/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers"><a href="#1" id="1">1</a>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><title>lib.rs - source</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-46f98efaafac5295.ttf.woff2,FiraSans-Regular-018c141bf0843ffd.woff2,FiraSans-Medium-8f9a781e4970d388.woff2,SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2,SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../static.files/rustdoc-49344e4802b2d48a.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="twitch_api" data-themes="" data-resource-suffix="" data-rustdoc-version="1.83.0-nightly (52fd99839 2024-10-10)" data-channel="nightly" data-search-js="search-e056c65ede92db13.js" data-settings-js="settings-805db61a62df4bd2.js" ><script src="../../static.files/storage-1d39b6787ed640ff.js"></script><script defer src="../../static.files/src-script-e66d777a5a92e9b2.js"></script><script defer src="../../src-files.js"></script><script defer src="../../static.files/main-f070b9041d14864c.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-0111fcff984fae8f.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title"><h2>Files</h2></div></nav><div class="sidebar-resizer"></div><main><rustdoc-search></rustdoc-search><section id="main-content" class="content"><div class="main-heading"><h1><div class="sub-heading">twitch_api/</div>lib.rs</h1><rustdoc-toolbar></rustdoc-toolbar></div><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers">
+<a href="#1" id="1">1</a>
 <a href="#2" id="2">2</a>
 <a href="#3" id="3">3</a>
 <a href="#4" id="4">4</a>
@@ -410,9 +409,19 @@
 <a href="#408" id="408">408</a>
 <a href="#409" id="409">409</a>
 <a href="#410" id="410">410</a>
-</pre></div><pre class="rust"><code><span class="attr">#![deny(missing_docs, rustdoc::broken_intra_doc_links)]
-#![cfg_attr(nightly, feature(doc_cfg))]
+<a href="#411" id="411">411</a>
+<a href="#412" id="412">412</a>
+<a href="#413" id="413">413</a>
+<a href="#414" id="414">414</a>
+<a href="#415" id="415">415</a>
+<a href="#416" id="416">416</a>
+<a href="#417" id="417">417</a>
+<a href="#418" id="418">418</a></pre></div><pre class="rust"><code><span class="attr">#![deny(missing_docs, rustdoc::broken_intra_doc_links)]
+#![allow(clippy::needless_raw_string_hashes)]
+#![cfg_attr(test, allow(deprecated))] </span><span class="comment">// for pubsub tests
+</span><span class="attr">#![cfg_attr(nightly, feature(doc_cfg))]
 #![cfg_attr(nightly, feature(doc_auto_cfg))]
+#![allow(clippy::needless_raw_string_hashes)]
 #![doc(html_root_url = <span class="string">"https://docs.rs/twitch_api/0.7.0-rc.7"</span>)]
 </span><span class="doccomment">//! [![github]](https://github.com/twitch-rs/twitch_api)&amp;ensp;[![crates-io]](https://crates.io/crates/twitch_api)&amp;ensp;[![docs-rs-big]](https://docs.rs/twitch_api/0.7.0-rc.7/twitch_api)
 //!
@@ -468,8 +477,7 @@
 //!         vec![/* scopes */],
 //!     )
 //!     .await?;
-//!     let ids: &amp;[&amp;twitch_types::UserIdRef] = &amp;["27620241".into()];
-//!     let req = GetChannelInformationRequest::broadcaster_ids(ids);
+//!     let req = GetChannelInformationRequest::broadcaster_ids(&amp;["27620241"]);
 //!     println!(
 //!         "{:?}",
 //!         &amp;client.helix.req_get(req, &amp;token).await?.data[0].title
@@ -508,11 +516,9 @@
 //! | Feature |         |
 //! | -------: | :------- |
 //! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;twitch_oauth2&lt;/code&gt;&lt;/span&gt; | Gives [scopes](twitch_oauth2::Scope) for endpoints and topics that are needed to call them. |
-//! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;client&lt;/code&gt;&lt;/span&gt; | Gives a [client abstraction](HttpClient) for endpoints. See for example [`TmiClient`] and [`HelixClient`] |
+//! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;client&lt;/code&gt;&lt;/span&gt; | Gives a [client abstraction](HttpClient) for endpoints. See [`HelixClient`] |
 //! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;helix&lt;/code&gt;&lt;/span&gt; | Enables [Helix](helix) endpoints |
-//! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;tmi&lt;/code&gt;&lt;/span&gt; | Enables [TMI](tmi) endpoints |
 //! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;eventsub&lt;/code&gt;&lt;/span&gt; | Enables deserializable structs for [EventSub](eventsub) |
-//! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;pubsub&lt;/code&gt;&lt;/span&gt; | Enables deserializable structs for [PubSub](pubsub) |
 //! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;hmac&lt;/code&gt;&lt;/span&gt; | Enable [message authentication](eventsub::Event::verify_payload) using HMAC on [EventSub](eventsub) |
 //! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;time&lt;/code&gt;&lt;/span&gt; | Enable time utilities on [Timestamp](types::Timestamp) |
 //! | &lt;span class="module-item stab portability" style="display: inline; border-radius: 3px; padding: 2px; font-size: 80%; line-height: 1.2;"&gt;&lt;code&gt;all&lt;/code&gt;&lt;/span&gt; | Enables all above features. Do not use this in production, it's better if you specify exactly what you need |
@@ -535,10 +541,12 @@
 
 <span class="attr">#[cfg(feature = <span class="string">"helix"</span>)]
 </span><span class="kw">pub mod </span>helix;
-<span class="attr">#[cfg(feature = <span class="string">"tmi"</span>)]
-</span><span class="kw">pub mod </span>tmi;
 
 <span class="attr">#[cfg(feature = <span class="string">"pubsub"</span>)]
+#[deprecated(
+    since = <span class="string">"0.7.0"</span>,
+    note = <span class="string">"use `EventSub` instead, see https://discuss.dev.twitch.com/t/legacy-pubsub-deprecation-and-shutdown-timeline/58043"
+</span>)]
 </span><span class="kw">pub mod </span>pubsub;
 
 <span class="attr">#[cfg(feature = <span class="string">"eventsub"</span>)]
@@ -547,15 +555,8 @@
 <span class="attr">#[cfg(all(feature = <span class="string">"helix"</span>, feature = <span class="string">"client"</span>))]
 #[doc(inline)]
 </span><span class="kw">pub use </span><span class="kw">crate</span>::helix::HelixClient;
-<span class="attr">#[cfg(all(feature = <span class="string">"tmi"</span>, feature = <span class="string">"client"</span>))]
-#[doc(inline)]
-#[deprecated(
-    note = <span class="string">"All TMI functionality has been implemented with helix endpoint Get Chatters"
-</span>)]
-#[allow(deprecated)]
-</span><span class="kw">pub use </span><span class="kw">crate</span>::tmi::TmiClient;
 
-<span class="doccomment">/// Extra types not defined in [`twitch_types`](types)
+<span class="doccomment">/// Extra types not defined in [`twitch_types`]
 </span><span class="kw">pub mod </span>extra;
 
 <span class="attr">#[cfg(any(feature = <span class="string">"twitch_oauth2"</span>, all(feature = <span class="string">"helix"</span>, feature = <span class="string">"client"</span>)))]
@@ -571,14 +572,9 @@
 #[cfg(feature = <span class="string">"client"</span>)]
 </span><span class="kw">pub use </span>client::DummyHttpClient;
 
-<span class="attr">#[cfg(any(
-    feature = <span class="string">"helix"</span>,
-    feature = <span class="string">"tmi"</span>,
-    feature = <span class="string">"pubsub"</span>,
-    feature = <span class="string">"eventsub"
-</span>))]
+<span class="attr">#[cfg(any(feature = <span class="string">"helix"</span>, feature = <span class="string">"pubsub"</span>, feature = <span class="string">"eventsub"</span>))]
 </span><span class="doccomment">/// Generate a url with a default if `mock_api` feature is disabled, or env var is not defined or is invalid utf8
-</span><span class="macro">macro_rules! </span>mock_env_url {
+</span><span class="macro">macro_rules!</span> mock_env_url {
     (<span class="macro-nonterminal">$var</span>:literal, <span class="macro-nonterminal">$default</span>:expr $(,)<span class="question-mark">?</span>) =&gt; {
         once_cell::sync::Lazy::new(<span class="kw">move </span>|| {
             <span class="attr">#[cfg(feature = <span class="string">"mock_api"</span>)]
@@ -604,12 +600,6 @@
 </span><span class="attr">#[cfg(feature = <span class="string">"helix"</span>)]
 </span><span class="kw">pub static </span>TWITCH_HELIX_URL: once_cell::sync::Lazy&lt;url::Url&gt; =
     <span class="macro">mock_env_url!</span>(<span class="string">"TWITCH_HELIX_URL"</span>, <span class="string">"https://api.twitch.tv/helix/"</span>);
-<span class="doccomment">/// Location of Twitch TMI
-///
-/// Can be overriden when feature `mock_api` is enabled with environment variable `TWITCH_TMI_URL`.
-</span><span class="attr">#[cfg(feature = <span class="string">"tmi"</span>)]
-</span><span class="kw">pub static </span>TWITCH_TMI_URL: once_cell::sync::Lazy&lt;url::Url&gt; =
-    <span class="macro">mock_env_url!</span>(<span class="string">"TWITCH_TMI_URL"</span>, <span class="string">"https://tmi.twitch.tv/"</span>);
 <span class="doccomment">/// Location to twitch PubSub
 ///
 /// Can be overriden when feature `mock_api` is enabled with environment variable `TWITCH_PUBSUB_URL`.
@@ -640,7 +630,7 @@
 /// ```
 ///
 /// See [`client`] for implemented clients, you can also define your own if needed.
-</span><span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>)))]
+</span><span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, feature = <span class="string">"helix"</span>))]
 #[derive(Clone)]
 #[non_exhaustive]
 </span><span class="kw">pub struct </span>TwitchClient&lt;<span class="lifetime">'a</span>, C&gt;
@@ -648,16 +638,12 @@
     <span class="doccomment">/// Helix endpoint. See [`helix`]
     </span><span class="attr">#[cfg(feature = <span class="string">"helix"</span>)]
     </span><span class="kw">pub </span>helix: HelixClient&lt;<span class="lifetime">'a</span>, C&gt;,
-    <span class="doccomment">/// TMI endpoint. See [`tmi`]
-    </span><span class="attr">#[cfg(feature = <span class="string">"tmi"</span>)]
-    #[allow(deprecated)]
-    </span><span class="kw">pub </span>tmi: TmiClient&lt;<span class="lifetime">'a</span>, C&gt;,
 }
 
-<span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>)))]
+<span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, feature = <span class="string">"helix"</span>))]
 </span><span class="kw">impl</span>&lt;C: HttpClient + <span class="lifetime">'static</span>&gt; TwitchClient&lt;<span class="lifetime">'static</span>, C&gt; {
     <span class="doccomment">/// Create a new [`TwitchClient`]
-    </span><span class="attr">#[cfg(any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>))]
+    </span><span class="attr">#[cfg(feature = <span class="string">"helix"</span>)]
     </span><span class="kw">pub fn </span>new() -&gt; TwitchClient&lt;<span class="lifetime">'static</span>, C&gt;
     <span class="kw">where </span>C: Clone + client::ClientDefault&lt;<span class="lifetime">'static</span>&gt; {
         <span class="kw">let </span>client = C::default_client();
@@ -665,47 +651,28 @@
     }
 }
 
-<span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>)))]
+<span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, feature = <span class="string">"helix"</span>))]
 </span><span class="kw">impl</span>&lt;C: HttpClient + client::ClientDefault&lt;<span class="lifetime">'static</span>&gt; + <span class="lifetime">'static</span>&gt; Default
     <span class="kw">for </span>TwitchClient&lt;<span class="lifetime">'static</span>, C&gt;
 {
     <span class="kw">fn </span>default() -&gt; <span class="self">Self </span>{ <span class="self">Self</span>::new() }
 }
 
-<span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>)))]
+<span class="attr">#[cfg(all(feature = <span class="string">"client"</span>, feature = <span class="string">"helix"</span>))]
 </span><span class="kw">impl</span>&lt;<span class="lifetime">'a</span>, C: HttpClient + <span class="lifetime">'a</span>&gt; TwitchClient&lt;<span class="lifetime">'a</span>, C&gt; {
     <span class="doccomment">/// Create a new [`TwitchClient`] with an existing [`HttpClient`]
-    </span><span class="attr">#[cfg_attr(
-        nightly,
-        doc(cfg(all(feature = <span class="string">"client"</span>, any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>))))
-    )]
-    #[cfg(any(feature = <span class="string">"helix"</span>, feature = <span class="string">"tmi"</span>))]
+    </span><span class="attr">#[cfg_attr(nightly, doc(cfg(all(feature = <span class="string">"client"</span>, feature = <span class="string">"helix"</span>))))]
+    #[cfg(feature = <span class="string">"helix"</span>)]
     </span><span class="kw">pub fn </span>with_client(client: C) -&gt; TwitchClient&lt;<span class="lifetime">'a</span>, C&gt;
     <span class="kw">where </span>C: Clone + <span class="lifetime">'a </span>{
-        <span class="comment">// FIXME: This Clone is not used when only using one of the endpoints
-        </span><span class="attr">#[allow(deprecated)]
-        </span>TwitchClient {
-            <span class="attr">#[cfg(feature = <span class="string">"tmi"</span>)]
-            </span>tmi: TmiClient::with_client(client.clone()),
+        TwitchClient {
             <span class="attr">#[cfg(feature = <span class="string">"helix"</span>)]
             </span>helix: HelixClient::with_client(client),
         }
     }
 
-    <span class="doccomment">/// Retrieve a reference of the [`HttpClient`][crate::HttpClient] inside this [`TwitchClient`]
-    </span><span class="kw">pub fn </span>get_client(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span>C {
-        <span class="attr">#[cfg(feature = <span class="string">"helix"</span>)]
-        </span>{
-            <span class="self">self</span>.helix.get_client()
-        }
-        <span class="attr">#[cfg(not(feature = <span class="string">"helix"</span>))]
-        </span>{
-            <span class="attr">#[cfg(feature = <span class="string">"tmi"</span>)]
-            </span>{
-                <span class="self">self</span>.tmi.get_client()
-            }
-        }
-    }
+    <span class="doccomment">/// Retrieve a reference of the [`HttpClient`] inside this [`TwitchClient`]
+    </span><span class="kw">pub fn </span>get_client(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span>C { <span class="self">self</span>.helix.get_client() }
 }
 
 <span class="doccomment">/// A deserialization error
@@ -808,9 +775,56 @@
     <span class="prelude-val">Ok</span>(Option::deserialize(deserializer)<span class="question-mark">?</span>.unwrap_or_default())
 }
 
-<span class="attr">#[cfg(test)]
+<span class="attr">#[cfg(any(feature = <span class="string">"helix"</span>, feature = <span class="string">"eventsub"</span>))]
+#[allow(dead_code)]
+</span><span class="doccomment">/// Deserialize "" as &lt;T as Default&gt;::Default
+</span><span class="kw">fn </span>deserialize_none_from_empty_string&lt;<span class="lifetime">'de</span>, D, S&gt;(deserializer: D) -&gt; <span class="prelude-ty">Result</span>&lt;<span class="prelude-ty">Option</span>&lt;S&gt;, D::Error&gt;
+<span class="kw">where
+    </span>D: serde::Deserializer&lt;<span class="lifetime">'de</span>&gt;,
+    S: serde::Deserialize&lt;<span class="lifetime">'de</span>&gt;, {
+    <span class="kw">use </span>serde::de::IntoDeserializer;
+    <span class="kw">struct </span>Inner&lt;S&gt;(std::marker::PhantomData&lt;S&gt;);
+    <span class="kw">impl</span>&lt;<span class="lifetime">'de</span>, S&gt; serde::de::Visitor&lt;<span class="lifetime">'de</span>&gt; <span class="kw">for </span>Inner&lt;S&gt;
+    <span class="kw">where </span>S: serde::Deserialize&lt;<span class="lifetime">'de</span>&gt;
+    {
+        <span class="kw">type </span>Value = <span class="prelude-ty">Option</span>&lt;S&gt;;
+
+        <span class="kw">fn </span>expecting(<span class="kw-2">&amp;</span><span class="self">self</span>, formatter: <span class="kw-2">&amp;mut </span>std::fmt::Formatter&lt;<span class="lifetime">'_</span>&gt;) -&gt; std::fmt::Result {
+            formatter.write_str(<span class="string">"any string"</span>)
+        }
+
+        <span class="kw">fn </span>visit_str&lt;E&gt;(<span class="self">self</span>, value: <span class="kw-2">&amp;</span>str) -&gt; <span class="prelude-ty">Result</span>&lt;<span class="self">Self</span>::Value, E&gt;
+        <span class="kw">where </span>E: serde::de::Error {
+            <span class="kw">match </span>value {
+                <span class="string">"" </span>=&gt; <span class="prelude-val">Ok</span>(<span class="prelude-val">None</span>),
+                v =&gt; S::deserialize(v.into_deserializer()).map(<span class="prelude-val">Some</span>),
+            }
+        }
+
+        <span class="kw">fn </span>visit_string&lt;E&gt;(<span class="self">self</span>, value: String) -&gt; <span class="prelude-ty">Result</span>&lt;<span class="self">Self</span>::Value, E&gt;
+        <span class="kw">where </span>E: serde::de::Error {
+            <span class="kw">match </span><span class="kw-2">&amp;*</span>value {
+                <span class="string">"" </span>=&gt; <span class="prelude-val">Ok</span>(<span class="prelude-val">None</span>),
+                v =&gt; S::deserialize(v.into_deserializer()).map(<span class="prelude-val">Some</span>),
+            }
+        }
+
+        <span class="kw">fn </span>visit_unit&lt;E&gt;(<span class="self">self</span>) -&gt; <span class="prelude-ty">Result</span>&lt;<span class="self">Self</span>::Value, E&gt;
+        <span class="kw">where </span>E: serde::de::Error {
+            <span class="prelude-val">Ok</span>(<span class="prelude-val">None</span>)
+        }
+    }
+
+    deserializer.deserialize_any(Inner(std::marker::PhantomData))
+}
+
+<span class="doccomment">/// Helper functions for tests
+</span><span class="attr">#[cfg(test)]
 </span><span class="kw">pub mod </span>tests {
-    <span class="attr">#[track_caller]
+    <span class="doccomment">/// Checks that `val` can be serialized and deserialized to `T` with JSON and CBOR.
+    ///
+    /// In pseudocode, this tests `deserialize(serialize(val))`.
+    </span><span class="attr">#[track_caller]
     </span><span class="kw">pub fn </span>roundtrip&lt;T: serde::de::DeserializeOwned + serde::Serialize&gt;(val: <span class="kw-2">&amp;</span>T) {
         serde_json::from_slice::&lt;T&gt;(<span class="kw-2">&amp;</span>serde_json::to_vec(val).expect(<span class="string">"could not make into json"</span>))
             .expect(<span class="string">"could not convert back from json"</span>);
