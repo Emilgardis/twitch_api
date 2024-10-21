@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/helix/mod.rs`."><title>mod.rs - source</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-46f98efaafac5295.ttf.woff2,FiraSans-Regular-018c141bf0843ffd.woff2,FiraSans-Medium-8f9a781e4970d388.woff2,SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2,SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../../static.files/rustdoc-49344e4802b2d48a.css"><meta name="rustdoc-vars" data-root-path="../../../" data-static-root-path="../../../static.files/" data-current-crate="twitch_api" data-themes="" data-resource-suffix="" data-rustdoc-version="1.83.0-nightly (52fd99839 2024-10-10)" data-channel="nightly" data-search-js="search-e056c65ede92db13.js" data-settings-js="settings-805db61a62df4bd2.js" ><script src="../../../static.files/storage-1d39b6787ed640ff.js"></script><script defer src="../../../static.files/src-script-e66d777a5a92e9b2.js"></script><script defer src="../../../src-files.js"></script><script defer src="../../../static.files/main-f070b9041d14864c.js"></script><noscript><link rel="stylesheet" href="../../../static.files/noscript-0111fcff984fae8f.css"></noscript><link rel="alternate icon" type="image/png" href="../../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title"><h2>Files</h2></div></nav><div class="sidebar-resizer"></div><main><rustdoc-search></rustdoc-search><section id="main-content" class="content"><div class="main-heading"><h1><div class="sub-heading">twitch_api/helix/</div>mod.rs</h1><rustdoc-toolbar></rustdoc-toolbar></div><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/helix/mod.rs`."><title>mod.rs - source</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../../static.files/rustdoc-a5dc3bae.css"><meta name="rustdoc-vars" data-root-path="../../../" data-static-root-path="../../../static.files/" data-current-crate="twitch_api" data-themes="" data-resource-suffix="" data-rustdoc-version="1.84.0-nightly (662180b34 2024-10-20)" data-channel="nightly" data-search-js="search-c5a66128.js" data-settings-js="settings-0f613d39.js" ><script src="../../../static.files/storage-59e33391.js"></script><script defer src="../../../static.files/src-script-56102188.js"></script><script defer src="../../../src-files.js"></script><script defer src="../../../static.files/main-5f194d8c.js"></script><noscript><link rel="stylesheet" href="../../../static.files/noscript-893ab5e7.css"></noscript><link rel="alternate icon" type="image/png" href="../../../static.files/favicon-32x32-6580c154.png"><link rel="icon" type="image/svg+xml" href="../../../static.files/favicon-044be391.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title"><h2>Files</h2></div></nav><div class="sidebar-resizer"></div><main><rustdoc-search></rustdoc-search><section id="main-content" class="content"><div class="main-heading"><h1><div class="sub-heading">twitch_api/helix/</div>mod.rs</h1><rustdoc-toolbar></rustdoc-toolbar></div><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers">
 <a href="#1" id="1">1</a>
 <a href="#2" id="2">2</a>
 <a href="#3" id="3">3</a>
@@ -589,7 +589,8 @@
 <a href="#588" id="588">588</a>
 <a href="#589" id="589">589</a>
 <a href="#590" id="590">590</a>
-<a href="#591" id="591">591</a></pre></div><pre class="rust"><code><span class="doccomment">//! Helix endpoints or the [New Twitch API](https://dev.twitch.tv/docs/api)
+<a href="#591" id="591">591</a>
+<a href="#592" id="592">592</a></pre></div><pre class="rust"><code><span class="doccomment">//! Helix endpoints or the [New Twitch API](https://dev.twitch.tv/docs/api)
 //!
 //! [`HelixClient`] provides convenience function for sending requests as described on [the crate documentation](crate).
 //!
@@ -822,24 +823,24 @@
 //!
 //! &lt;/details&gt;
 //!
-//! &lt;details&gt;&lt;summary style="cursor: pointer"&gt;Moderation 🟡 18/23&lt;/summary&gt;
+//! &lt;details&gt;&lt;summary style="cursor: pointer"&gt;Moderation 🟢 23/23&lt;/summary&gt;
 //!
 //! | Endpoint | Helper | Module |
 //! |---|---|---|
 //! | [Check AutoMod Status](https://dev.twitch.tv/docs/api/reference#check-automod-status) | - | [`moderation::check_automod_status`] |
 //! | [Manage Held AutoMod Messages](https://dev.twitch.tv/docs/api/reference#manage-held-automod-messages) | - | [`moderation::manage_held_automod_messages`] |
-//! | [Get AutoMod Settings](https://dev.twitch.tv/docs/api/reference#get-automod-settings) | - | - |
-//! | [Update AutoMod Settings](https://dev.twitch.tv/docs/api/reference#update-automod-settings) | - | - |
+//! | [Get AutoMod Settings](https://dev.twitch.tv/docs/api/reference#get-automod-settings) | - | [`moderation::get_automod_settings`] |
+//! | [Update AutoMod Settings](https://dev.twitch.tv/docs/api/reference#update-automod-settings) | - | [`moderation::update_automod_settings`] |
 //! | [Get Banned Users](https://dev.twitch.tv/docs/api/reference#get-banned-users) | - | [`moderation::get_banned_users`] |
 //! | [Ban User](https://dev.twitch.tv/docs/api/reference#ban-user) | [`HelixClient::ban_user`] | [`moderation::ban_user`] |
 //! | [Unban User](https://dev.twitch.tv/docs/api/reference#unban-user) | [`HelixClient::unban_user`] | [`moderation::unban_user`] |
-//! | [Get Unban Requests](https://dev.twitch.tv/docs/api/reference#get-unban-requests) | - | - |
-//! | [Resolve Unban Requests](https://dev.twitch.tv/docs/api/reference#resolve-unban-requests) | - | - |
+//! | [Get Unban Requests](https://dev.twitch.tv/docs/api/reference#get-unban-requests) | [`HelixClient::get_unban_requests`] | [`moderation::get_unban_requests`] |
+//! | [Resolve Unban Requests](https://dev.twitch.tv/docs/api/reference#resolve-unban-requests) | - | [`moderation::resolve_unban_request`] |
 //! | [Get Blocked Terms](https://dev.twitch.tv/docs/api/reference#get-blocked-terms) | - | [`moderation::get_blocked_terms`] |
 //! | [Add Blocked Term](https://dev.twitch.tv/docs/api/reference#add-blocked-term) | - | [`moderation::add_blocked_term`] |
 //! | [Remove Blocked Term](https://dev.twitch.tv/docs/api/reference#remove-blocked-term) | - | [`moderation::remove_blocked_term`] |
 //! | [Delete Chat Messages](https://dev.twitch.tv/docs/api/reference#delete-chat-messages) | - | [`moderation::delete_chat_messages`] |
-//! | [Get Moderated Channels](https://dev.twitch.tv/docs/api/reference#get-moderated-channels) | - | - |
+//! | [Get Moderated Channels](https://dev.twitch.tv/docs/api/reference#get-moderated-channels) | [`HelixClient::get_moderated_channels`] | [`moderation::get_moderated_channels`] |
 //! | [Get Moderators](https://dev.twitch.tv/docs/api/reference#get-moderators) | - | [`moderation::get_moderators`] |
 //! | [Add Channel Moderator](https://dev.twitch.tv/docs/api/reference#add-channel-moderator) | [`HelixClient::add_channel_moderator`] | [`moderation::add_channel_moderator`] |
 //! | [Remove Channel Moderator](https://dev.twitch.tv/docs/api/reference#remove-channel-moderator) | [`HelixClient::remove_channel_moderator`] | [`moderation::remove_channel_moderator`] |
@@ -1009,6 +1010,7 @@
 <span class="kw">pub</span>(<span class="kw">crate</span>) <span class="kw">mod </span>ser;
 <span class="kw">pub</span>(<span class="kw">crate</span>) <span class="kw">use </span><span class="kw">crate</span>::deserialize_default_from_null;
 <span class="kw">use </span><span class="kw">crate</span>::parse_json;
+<span class="kw">pub</span>(<span class="kw">crate</span>) <span class="kw">use </span>request::parse_single_return;
 
 <span class="attr">#[derive(PartialEq, Deserialize, Debug)]
 </span><span class="kw">struct </span>InnerResponse&lt;D&gt; {
