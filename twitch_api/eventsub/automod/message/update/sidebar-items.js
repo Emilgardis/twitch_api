@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["AutomodMessageUpdateV1","AutomodMessageUpdateV1Payload","AutomodMessageUpdateV2","AutomodMessageUpdateV2Payload"]};
