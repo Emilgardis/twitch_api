@@ -127,12 +127,14 @@
 //!
 //! </details>
 //!
-//! <details><summary style="cursor: pointer">Clips 🟢 2/2</summary>
+//! <details><summary style="cursor: pointer">Clips 🟡 2/4</summary>
 //!
 //! | Endpoint | Helper | Module |
 //! |---|---|---|
 //! | [Create Clip](https://dev.twitch.tv/docs/api/reference#create-clip) | - | [`clips::create_clip`] |
+//! | [Create Clip From VOD](https://dev.twitch.tv/docs/api/reference#create-clip-from-vod) | - | - |
 //! | [Get Clips](https://dev.twitch.tv/docs/api/reference#get-clips) | - | [`clips::get_clips`] |
+//! | [Get Clips Download](https://dev.twitch.tv/docs/api/reference#get-clips-download) | - | - |
 //!
 //! </details>
 //!
@@ -223,16 +225,15 @@
 //!
 //! </details>
 //!
-//! <details><summary style="cursor: pointer">Hype Train 🟡 1/2</summary>
+//! <details><summary style="cursor: pointer">Hype Train 🔴 0/1</summary>
 //!
 //! | Endpoint | Helper | Module |
 //! |---|---|---|
-//! | [Get Hype Train Events](https://dev.twitch.tv/docs/api/reference#get-hype-train-events) | - | [`hypetrain::get_hypetrain_events`] |
 //! | [Get Hype Train Status](https://dev.twitch.tv/docs/api/reference#get-hype-train-status) | - | - |
 //!
 //! </details>
 //!
-//! <details><summary style="cursor: pointer">Moderation 🟢 23/23</summary>
+//! <details><summary style="cursor: pointer">Moderation 🟡 23/25</summary>
 //!
 //! | Endpoint | Helper | Module |
 //! |---|---|---|
@@ -259,6 +260,8 @@
 //! | [Update Shield Mode Status](https://dev.twitch.tv/docs/api/reference#update-shield-mode-status) | - | [`moderation::update_shield_mode_status`] |
 //! | [Get Shield Mode Status](https://dev.twitch.tv/docs/api/reference#get-shield-mode-status) | - | [`moderation::get_shield_mode_status`] |
 //! | [Warn Chat User](https://dev.twitch.tv/docs/api/reference#warn-chat-user) | [`HelixClient::warn_chat_user`] | [`moderation::warn_chat_user`] |
+//! | [Add Suspicious Status to Chat User](https://dev.twitch.tv/docs/api/reference#add-suspicious-status-to-chat-user) | - | - |
+//! | [Remove Suspicious Status From Chat User](https://dev.twitch.tv/docs/api/reference#remove-suspicious-status-from-chat-user) | - | - |
 //!
 //! </details>
 //!
@@ -352,12 +355,13 @@
 //!
 //! </details>
 //!
-//! <details><summary style="cursor: pointer">Users 🟢 8/8</summary>
+//! <details><summary style="cursor: pointer">Users 🟡 8/9</summary>
 //!
 //! | Endpoint | Helper | Module |
 //! |---|---|---|
 //! | [Get Users](https://dev.twitch.tv/docs/api/reference#get-users) | [`HelixClient::get_user_from_id`], [`HelixClient::get_user_from_login`], [`HelixClient::get_users_from_ids`], [`HelixClient::get_users_from_logins`] | [`users::get_users`] |
 //! | [Update User](https://dev.twitch.tv/docs/api/reference#update-user) | [`HelixClient::update_user_description`] | [`users::update_user`] |
+//! | [Get Authorization By User](https://dev.twitch.tv/docs/api/reference#get-authorization-by-user) | - | - |
 //! | [Get User Block List](https://dev.twitch.tv/docs/api/reference#get-user-block-list) | - | [`users::get_user_block_list`] |
 //! | [Block User](https://dev.twitch.tv/docs/api/reference#block-user) | [`HelixClient::block_user`] | [`users::block_user`] |
 //! | [Unblock User](https://dev.twitch.tv/docs/api/reference#unblock-user) | [`HelixClient::unblock_user`] | [`users::unblock_user`] |
